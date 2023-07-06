@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    display: flex;
+    top: 150px;
+    margin-left: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h2 {
+    font-size: 3em;
+    color: #ccc;
+    margin-bottom: 100px;
+}
+
+.container .link {
+    text-decoration: none;
+    background: #ff0800;
+    color: #ccc;
+    font-size: 2em;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.container a:hover {
+    background: #470200;
+    border: 1px solid #ccc;
+}

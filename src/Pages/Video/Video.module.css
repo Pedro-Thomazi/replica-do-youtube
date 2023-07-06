@@ -1,0 +1,320 @@
+.containerVideos {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    width: 66vw;
+    margin: 40px 0px 0px 100px;
+    color: #ccc;
+}
+
+.video .photoVideo{
+    width: 100%;
+}
+
+.video h2 {
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+    margin-top: 20px;
+    font-size: 1.5em;
+    height: 60px;
+}
+
+.channelAndConfigs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.photoChannel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channel {
+    display: flex;
+    margin: -10px 0px 20px 0px;
+}
+
+.channel span {
+    margin-left: 10px;
+}
+
+.channel span a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.channel span p {
+    font-size: .9em;
+}
+
+.btnSubscri {
+    text-decoration: none;
+    text-align: center;
+    background: #ccc;
+    color: #111;
+    padding: 15px 10px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+.configs button {
+    margin-left: 20px;
+}
+
+.btnLikeDislike {
+    background: #555;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btnLikeDislike .btnLike {
+    background: transparent;
+    cursor: pointer;
+    color: #ccc;
+    padding: 10px 10px;
+    margin: -20px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    font-size: 1em;
+    border-right: 1px solid #ccc;
+}
+
+.btnLikeDislike .btnDislike {
+    background: transparent;
+    padding: 10px 20px;
+    margin-right: -20px;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    color: #ccc;
+    border: none;
+    font-size: 1em;
+}
+
+.sendBtn,
+.saveBtn {
+    background: #555;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ccc;
+    border: none;
+    font-size: 1em;
+}
+
+.dotsBtn {
+    background: #555;
+    font-size: 1em;
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ccc;
+    border: none;
+}
+
+.channelAndConfigs button:hover {
+    background: #444;
+}
+
+.commentsChannel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110px;
+    border-radius: 20px;
+    padding: 15px 10px;
+    background: #555;
+    overflow: hidden;
+}
+
+.lessComm, 
+.moreComm {
+    cursor: pointer;
+    margin: 10px 0px;
+    width: 10%;
+}
+
+.lessComm {
+    display: none;
+}
+
+.moreComments {
+    display: none;
+}
+
+.moreComments:checked ~ .commentsChannel {
+    height: auto;
+}
+
+.moreComments:checked ~ .moreComm {
+    display: none;
+}
+.moreComments:checked ~ .lessComm {
+    display: block;
+}
+
+.visualiMonthTags {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.visualiMonthTags p {
+    margin-right: 10px;
+}
+
+.visualiMonthTags p:not(.hashtags) {
+    color: #fff;
+}
+
+.hashtags {
+    color: #999;
+}
+
+.qtdCommets {
+    display: flex;
+    margin-top: 15px;
+}
+
+.qtdCommets p {
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 1.2em;
+}
+
+.qtdCommets p i {
+    margin-right: 10px;
+}
+
+.addComment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.addComment img {
+    margin-right: 15px;
+}
+
+.addComment .comment {
+    width: 100%;
+}
+
+.addComment .comment input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+.commentsUsers {
+    margin: 20px 0px;
+}
+
+.commentsUsers ul li {
+    display: flex;
+}
+
+.photoChannelUserComme {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nameAndMonth {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.nameAndMonth h3 {
+    margin-right: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+.commentUser {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.containerCommenstUser {
+    display: flex;
+    align-items: center;
+}
+
+.btnDislikeUserComm,
+.btnLikeUserComme {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.heart {
+    cursor: pointer;
+    color: red;
+    margin-left: 20px;
+}
+
+.respond {
+    cursor: pointer;
+    margin: 10px 30px;
+}
+
+.answers {
+    cursor: pointer;
+    margin: 20px 0px;
+    color: rgb(0, 174, 255);
+}
+
+.othersVideo {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px;
+}
+
+.videos ul a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.videoPhoto {
+    width: 60%;
+}
+
+.othersVideo .channelPhoto {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.titles {
+    width: 60%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.visualizations {
+    display: flex;
+    margin-top: 5px;
+    font-size: .9em;
+}
+
+.linkToTheChannel:hover {
+    color: #999;
+}

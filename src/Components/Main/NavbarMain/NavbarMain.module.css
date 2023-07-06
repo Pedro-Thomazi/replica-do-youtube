@@ -1,0 +1,35 @@
+.navbarMain {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbarMain a {
+    text-decoration: none;
+    color: #ccc;
+    background: #4e4e4e;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 10px;
+}
+
+.navbarMain a:hover {
+    background: #383838;
+}
+
+.navbarMain i {
+    cursor: pointer;
+    color: #ccc;
+    font-size: 2em;
+    margin-left: 10px;
+    transition: .4s;
+}
+
+.navbarMain i:hover {
+    color: #777;
+}
+
+.active {
+    color: #333;
+    background: #ccc;
+}

@@ -1,0 +1,114 @@
+.channelContainer {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 82vw;
+    padding: 5px;
+}
+
+.onlyBorderBotton {
+    border-bottom: 1px solid #ccc;
+}
+
+.imageChannelContainer {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.imageChannel {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 70px;
+}
+
+.containerPrincipal {
+    display: flex;
+    align-items: center;
+    color: #ccc;
+}
+
+.photoChannel {
+    width: 150px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.channelNameAndDescription h1 {
+    font-weight: 400;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.channelNameAndDescription span {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.channelNameAndDescription span p {
+    margin-right: 10px;
+}
+
+.channelNameAndDescription span p:nth-child(1) {
+    font-weight: 600;
+}
+
+.descriptionChannel {
+    margin-top: 10px;
+}
+
+.descriptionChannel i {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.containerButton {
+    margin-right: 20px;
+}
+
+.containerButton a button {
+    cursor: pointer;
+    background: #ccc;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.videos {
+    width: 100%;
+    margin: 20px 30px;
+}
+
+.videos ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.videos ul a {
+    border-radius: 30px;
+}
+
+.othersVideo {
+    margin: 10px;
+    width: 250px;
+    /* border: 1px solid #ccc; */
+}
+
+.linkToTheChannel:hover {
+    color: #999;
+}
+
+.othersVideo p {
+    margin-bottom: 5px;
+}
+
+.videoPhoto {
+    width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,86 @@
+.main {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    margin-left: 100px;
+    width: 80%;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+}
+
+.videos {
+    /* border: 1px solid #ccc; */
+    margin-top: 40px;
+}
+
+.videos h2 {
+    color: #ccc;
+    margin: 20px 0px;
+}
+
+.videos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.videos ul li {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ccc; */
+    width: 350px;
+    padding: 5px;
+    margin: 0 15px 20px 0px; 
+}
+
+.videos ul li .videoPhoto {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.videos ul li .videoPhoto:hover {
+    border-radius: 0px;
+}
+
+.videos ul li .titles {
+    display: flex;
+}
+
+.videos ul li .titles .channelPhoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 1px solid #ccc; */
+    margin: 5px 0px;
+}
+
+.videos ul li .titles h3 {
+    color: #ccc;
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.videos ul li .channelName {
+    color: #aaa;
+    margin-left: 60px;
+    transition: .3s;
+}
+
+.videos ul li .channelName:hover {
+    color: #eee;
+}
+
+.videos ul li .visualizations {
+    display: flex;
+    color: #aaa;
+    margin: 5px 0px 5px 60px;
+}

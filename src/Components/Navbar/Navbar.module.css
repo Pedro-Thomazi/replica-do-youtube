@@ -1,0 +1,78 @@
+.navbarOpen {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.navbarOpen div {
+    border-bottom: 1px solid #ccc;
+}
+
+.navbarClose div a,
+.navbarOpen div a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.navbarOpen div a span {
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 15px;
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 20px;
+}
+
+.navbarOpen div a span:hover {
+    background: #444;
+}
+
+.navbarOpen div a span i {
+    margin-right: 30px;
+}
+
+.thirdOptions p {
+    color: #ccc;
+    margin: 20px;
+}
+
+.btnLogin {
+    color: red;
+    border: 1px solid #cccccc59;
+}
+
+.navbarOpen div a .btnLogin:hover {
+    background: #00000027;
+}
+
+
+.navbarClose {
+    display: none;
+    width: 150px;
+}
+
+.navbarClose div a span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.navbarClose div a span:hover {
+    background: #444;
+}
+
+.btnHidden {
+    display: none;
+}
+
+.btnHidden:checked + .navbarOpen {
+    display: none;
+}
+
+.btnHidden:checked ~ .navbarClose {
+    display: flex;
+}

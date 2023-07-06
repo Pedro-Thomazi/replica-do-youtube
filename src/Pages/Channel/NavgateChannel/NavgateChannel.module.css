@@ -1,0 +1,19 @@
+.containerNavigator {
+    margin: 0px 500px 0px 60px;
+}
+
+.containerNavigator ul {
+    list-style: none;
+    display: flex;
+}
+
+.containerNavigator ul li a {
+    /* border: 1px solid #ccc; */
+    color: #ccc;
+    padding: 10px 30px;
+    margin: 0px 10px;
+}
+
+.active {
+    border-bottom: 1px solid #ccc;
+}
