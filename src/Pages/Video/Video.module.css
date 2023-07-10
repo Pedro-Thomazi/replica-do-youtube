@@ -16,7 +16,7 @@
     color: #ccc;
 }
 
-.video .photoVideo{
+.video .photoVideo {
     width: 100%;
 }
 
@@ -137,7 +137,7 @@
     overflow: hidden;
 }
 
-.lessComm, 
+.lessComm,
 .moreComm {
     cursor: pointer;
     margin: 10px 0px;
@@ -152,14 +152,15 @@
     display: none;
 }
 
-.moreComments:checked ~ .commentsChannel {
+.moreComments:checked~.commentsChannel {
     height: auto;
 }
 
-.moreComments:checked ~ .moreComm {
+.moreComments:checked~.moreComm {
     display: none;
 }
-.moreComments:checked ~ .lessComm {
+
+.moreComments:checked~.lessComm {
     display: block;
 }
 
@@ -317,4 +318,73 @@
 
 .linkToTheChannel:hover {
     color: #999;
+}
+
+
+@media (max-width: 500px) {
+    .photoVideo {
+        top: 0px;
+        position: sticky;
+    }
+    .video {
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        margin-top: -30px;
+    }
+
+    .channelAndConfigs {
+        flex-direction: column;
+    }
+
+    .channel {
+        margin-top: 10px;
+        /* border: 1px solid #ccc; */
+    }
+
+    .configs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .configs button p {
+        display: none;
+    }
+
+    .dotsBtn {
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #ccc;
+        border: none;
+    }
+
+    .channelAndConfigs button:hover {
+        background: none;
+    }
+
+    .containerVideos {
+        flex-direction: column;
+    }
+
+    .othersVideo {
+        width: 100%;
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+    .videoPhoto {
+        width: 100%;
+    }
+
+    .titles {
+        /* border: 1px solid #ccc; */
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }

@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    /* border: 1px solid #ccc; */
 
     /* background: #ccc; */
 }
@@ -163,6 +165,9 @@
 }
 
 @media (max-width: 1220px) {
+    .header {
+        justify-content: space-between;
+    }
     .configsLeft h1 {
         display: none;
     }
@@ -178,4 +183,35 @@
     .configsCenter span {
         width: auto;
     }
-} 
+}
+
+@media (max-width: 500px) {
+    .btnHamb {
+        display: none;
+    }
+
+    .configsCenter span {
+        border: none;
+    }
+
+    .configsCenter span div {
+        border: none;
+        align-items: center;
+        height: 50px;
+        margin-left: 200px;
+    }
+
+    .configsCenter input, 
+    .configsCenter .keyboard {
+        display: none;
+    }
+
+    .containerMic {
+        display: none;
+    }
+
+    .configsLeft h1 {
+        display: flex;
+    }
+    
+}

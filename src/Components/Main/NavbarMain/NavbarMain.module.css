@@ -1,7 +1,9 @@
 .navbarMain {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    /* border: 1px solid #ccc; */
 }
 
 .navbarMain a {
@@ -32,4 +34,19 @@
 .active {
     color: #333;
     background: #ccc;
+}
+
+@media (max-width: 500px) {
+    .navbarMain {
+        margin-top: -40px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+
+    .navbarMain a {
+        padding: 10px 30px;
+        font-size: .8em;
+    }
+
 }

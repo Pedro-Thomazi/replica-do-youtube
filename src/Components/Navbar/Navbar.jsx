@@ -1,3 +1,4 @@
+import BtnLogin from '../BtnLogin/BtnLogin'
 import styles from './Navbar.module.css'
 
 import { NavLink } from 'react-router-dom'
@@ -5,7 +6,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
-            <input className={styles.btnHidden} type="checkbox" id="toggle" />
+            <input className={`inputNavbar ${styles.btnHidden}`} type="checkbox" id="toggle" />
             <nav className={styles.navbarOpen}>
                 <div className={styles.firstOptions}>
                     <NavLink to='/'>
@@ -50,12 +51,7 @@ const Navbar = () => {
 
                 <div className={styles.thirdOptions}>
                     <p>Faça login para curtir vídeos, comentar e se Inscrever.</p>
-                    <NavLink to='/pageLogin'>
-                        <span className={styles.btnLogin}>
-                            <i className="bi bi-person"></i>
-                            Fazer Login
-                        </span>
-                    </NavLink>
+                    <BtnLogin />
                 </div>
 
 

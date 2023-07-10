@@ -1,0 +1,14 @@
+.configsRight span {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    color: red;
+    padding: 10px 20px 10px 10px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.configsRight span:hover {
+    background: #00000013;
+    border: 1px solid red;
+}

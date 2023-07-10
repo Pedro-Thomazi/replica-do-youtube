@@ -1,3 +1,4 @@
+import BtnLogin from '../BtnLogin/BtnLogin'
 import styles from './Header.module.css'
 
 import { Link } from 'react-router-dom'
@@ -26,12 +27,7 @@ const Header = () => {
 
             <div className={styles.configsRight}>
                 <i className={`bi bi-three-dots-vertical ${styles.threeDots}`}></i>
-                <Link to='/pageLogin'>
-                    <span>
-                        <i className="bi bi-person"></i>
-                        Fazer Login
-                    </span>
-                </Link>
+                <BtnLogin />
             </div>
         </header>
     )
