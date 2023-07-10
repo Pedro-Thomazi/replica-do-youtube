@@ -76,3 +76,34 @@
 .btnHidden:checked ~ .navbarClose {
     display: flex;
 }
+
+
+@media (max-width: 500px) {
+    .navbarOpen {
+        display: none;
+    }
+
+    .navbarClose {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        /* border: 1px solid #ccc; */
+    }
+
+    .navbarClose div a span p {
+        display: none;
+    }
+
+    .navbarClose div a span i {
+        font-size: 1.5em;
+    }
+
+    .navbarClose div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: #000;
+        z-index: 1000;
+    }
+}

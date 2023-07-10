@@ -60,8 +60,8 @@ const PageVideo = () => {
                                     <i className="bi bi-hand-thumbs-down"></i>
                                 </button>
                             </span>
-                            <button className={styles.sendBtn}><i className="bi bi-send"></i>Compartilhar</button>
-                            <button className={styles.saveBtn}><i className="bi bi-cloud-download"></i>Salvar</button>
+                            <button className={styles.sendBtn}><i className="bi bi-send"></i><p>Compartilhar</p></button>
+                            <button className={styles.saveBtn}><i className="bi bi-cloud-download"></i><p>Salvar</p></button>
                             <button className={styles.dotsBtn}><i className="bi bi-three-dots"></i></button>
                         </div>
                     </div>

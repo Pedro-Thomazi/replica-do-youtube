@@ -1,10 +1,10 @@
 .main {
     position: absolute;
     top: 100px;
-    left: 200px;
+    left: 160px;
     margin-left: 100px;
     width: 80%;
-    padding: 10px;
+    /* padding: 10px; */
     /* border: 1px solid #ccc; */
 }
 
@@ -22,6 +22,8 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .link {
@@ -34,7 +36,7 @@
     /* border: 1px solid #ccc; */
     width: 350px;
     padding: 5px;
-    margin: 0 15px 20px 0px; 
+    margin: 0 10px 20px 0px; 
 }
 
 .videos ul li .videoPhoto {
@@ -83,4 +85,36 @@
     display: flex;
     color: #aaa;
     margin: 5px 0px 5px 60px;
+}
+
+@media (max-width: 1000px) {
+    .videos ul li {
+        width: 30vw;
+        font-size: 2vw;
+    }
+
+    .videos ul li .videoPhoto{
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .main {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        /* border: 1px solid #ccc; */
+        z-index: -1;
+    }
+    .videos ul li {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .videos ul li .videoPhoto{
+        height: auto;
+    }
 }
