@@ -26,3 +26,21 @@
     background: #470200;
     border: 1px solid #ccc;
 }
+
+@media (max-width: 1021px) {
+    .container {
+        position: relative;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .container h2 {
+        font-size: 2em;
+        color: #ccc;
+        margin-bottom: 100px;
+    }
+
+    .container .link {
+        font-size: 1.5em;
+    }
+}

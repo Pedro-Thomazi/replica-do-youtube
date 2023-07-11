@@ -68,6 +68,10 @@
     border-radius: 20px;
 }
 
+.configs {
+    display: flex;
+}
+
 .configs button {
     margin-left: 20px;
 }
@@ -115,7 +119,7 @@
 .dotsBtn {
     background: #555;
     font-size: 1em;
-    padding: 10px 10px;
+    padding: 20px 20px;
     border-radius: 50%;
     cursor: pointer;
     color: #ccc;
@@ -135,6 +139,7 @@
     padding: 15px 10px;
     background: #555;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .lessComm,
@@ -284,6 +289,7 @@
 }
 
 .othersVideo {
+    /* border: 1px solid #ccc; */
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -296,7 +302,7 @@
 }
 
 .videoPhoto {
-    width: 60%;
+    width: 100%;
 }
 
 .othersVideo .channelPhoto {
@@ -305,7 +311,7 @@
 }
 
 .titles {
-    width: 60%;
+    width: 100%;
     height: 50px;
     overflow: hidden;
 }
@@ -320,12 +326,7 @@
     color: #999;
 }
 
-
-@media (max-width: 730px) {
-    .photoVideo {
-        top: 0px;
-        position: sticky;
-    }
+@media (max-width: 1405px) {
     .video {
         flex-direction: column;
         width: 100%;
@@ -334,17 +335,13 @@
     }
 
     .video h2 {
-        margin-left: 10px;
+        /* border: 1px solid #ccc; */
+        margin: 10px 10px 30px 10px;
     }
 
     .channelAndConfigs {
         flex-direction: column;
         margin-left: 10px;
-    }
-
-    .channel {
-        margin-top: 10px;
-        /* border: 1px solid #ccc; */
     }
 
     .configs {
@@ -353,11 +350,8 @@
         margin-bottom: 20px;
     }
 
-    .configs button p {
-        display: none;
-    }
-
     .dotsBtn {
+        margin-right: 20px;
         padding: 20px;
         border-radius: 50%;
         cursor: pointer;
@@ -365,8 +359,36 @@
         border: none;
     }
 
+    
     .channelAndConfigs button:hover {
         background: none;
+    }
+}
+
+@media (max-width: 854px) {
+    .configs {
+        font-size: .6em;
+    }
+}
+
+
+@media (max-width: 730px) {
+    .photoVideo {
+        top: 0px;
+        position: sticky;
+    }
+
+    .channel {
+        margin-top: 10px;
+        /* border: 1px solid #ccc; */
+    }
+
+    .configs {
+        font-size: 1em;
+    }
+
+    .configs button p {
+        display: none;
     }
 
     .containerVideos {
@@ -379,13 +401,8 @@
         margin-top: 15px;
     }
 
-    .videoPhoto {
-        width: 100%;
-    }
-
     .titles {
         margin-left: 10px;
-        width: 100%;
         font-size: 1.2em;
     }
 
