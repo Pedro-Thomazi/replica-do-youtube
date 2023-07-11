@@ -143,7 +143,7 @@ const PageVideo = () => {
                                     <span className={styles.visualizations}>
                                         <p>2,2 mi de visualizações</p>
                                         <i className="bi bi-dot"></i>
-                                        <p>há 3 meses</p>
+                                        <p className={styles.months}>há 3 meses</p>
                                     </span>
                                 </li>
                             </Link>
