@@ -26,6 +26,8 @@ const Header = () => {
             </div>
 
             <div className={styles.configsRight}>
+                <i className={`bi bi-search ${styles.search2}`}></i>
+                <i className={`bi bi-bell ${styles.bell}`}></i>
                 <i className={`bi bi-three-dots-vertical ${styles.threeDots}`}></i>
                 <BtnLogin />
             </div>

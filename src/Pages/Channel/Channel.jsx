@@ -1,7 +1,6 @@
 import styles from './Channel.module.css'
 
 import Header from '../../Components/Header/Header'
-import Navbar from '../../Components/Navbar/Navbar'
 
 import { Link } from 'react-router-dom'
 
@@ -9,6 +8,7 @@ import BackGroundImage from '../../Images/fotoDeFundoCanal.webp'
 import photoChannel from '../../Images/user.png'
 import NavgateChannel from './NavgateChannel/NavgateChannel'
 import photoVideo from '../../Images/fotoDoVideo.png'
+import NavbarVideos from '../../Components/NavbarVideos/NavbarVideos'
 
 const Channel = () => {
     
@@ -27,7 +27,7 @@ const Channel = () => {
     return (
         <>
             <Header />
-            <Navbar />
+            <NavbarVideos />
             <section className={styles.channelContainer}>
                 <div className={styles.onlyBorderBotton}>
                     <span className={styles.imageChannelContainer}>
