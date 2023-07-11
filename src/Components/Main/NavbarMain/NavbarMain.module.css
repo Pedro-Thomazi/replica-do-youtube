@@ -36,7 +36,7 @@
     background: #ccc;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1021px) {
     .navbarMain {
         margin-top: -40px;
         flex-wrap: nowrap;
@@ -44,8 +44,13 @@
         overflow: scroll;
     }
 
+    .navbarMain i {
+        display: none;
+    }
+
     .navbarMain a {
-        padding: 10px 30px;
+        text-align: center;
+        padding: 20px 30px;
         font-size: .8em;
     }
 

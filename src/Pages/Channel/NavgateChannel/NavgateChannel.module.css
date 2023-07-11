@@ -1,5 +1,6 @@
 .containerNavigator {
-    margin: 0px 500px 0px 60px;
+    width: 100%;
+    overflow: scroll;
 }
 
 .containerNavigator ul {
@@ -7,10 +8,15 @@
     display: flex;
 }
 
+.containerNavigator ul li {
+    margin: 0px 20px;
+    padding: 10px 40px;
+}
+
 .containerNavigator ul li a {
-    /* border: 1px solid #ccc; */
+    
     color: #ccc;
-    padding: 10px 30px;
+    
     margin: 0px 10px;
 }
 
